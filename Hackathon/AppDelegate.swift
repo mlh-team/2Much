@@ -1,3 +1,4 @@
+
 //
 //  AppDelegate.swift
 //  Hackathon
@@ -8,11 +9,16 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    override init(){
+        FirebaseApp.configure()
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
